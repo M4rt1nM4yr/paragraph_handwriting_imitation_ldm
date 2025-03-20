@@ -1,0 +1,17 @@
+.idea/
+TensorLogs/
+*.ckpt
+.idea/misc.xml
+*.pyc
+*.iml
+.idea/misc.xml
+*.iml
+src/data/utils/__pycache__/DataloaderUtils.cpython-39.pyc
+*.pyc
+*.pyc
+*.pyc
+/__pycache__
+/thirdparty/VQVAEGAN/__pycache__
+/__pycache__
+/src/data/augmentation/__pycache__
+/__pycache__

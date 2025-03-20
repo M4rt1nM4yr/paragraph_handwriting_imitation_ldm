@@ -1,0 +1,11 @@
+target: thirdparty.VQVAEGAN.autoencoder.AutoencoderKL
+#ckpt: #TODO insert AutoKL ckpt path here
+params:
+  ch : 32
+  embed_dim : 1
+  z_channels: 1
+  noisy_teach_prob: 0.0
+  ch_mult : [1, 2, 4, 8]
+  htr_weight : 0.0
+  writer_weight : 0.0
+  disc_weight : 0.0

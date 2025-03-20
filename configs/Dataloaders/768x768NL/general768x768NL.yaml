@@ -1,0 +1,15 @@
+target: src.data.GeneralDataModule.GeneralDataModule
+params:
+  dataset: src.data.GeneralDataset.GeneralAugmentedDataset
+  root_source: #TODO IAM root
+  dataset_type : "IAM"
+  scale : 1.0
+  size : [768,768]
+  z_shape : [96,96]
+  modeParagraph : 0
+  in_channels : 1
+  TestRun : False
+  style_samples : False
+  remove_newline : True
+  persistent_workers : True
+  n_workers : 8

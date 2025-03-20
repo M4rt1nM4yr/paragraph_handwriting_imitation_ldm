@@ -1,0 +1,39 @@
+target: src.diffusion.ddpm.LatentDiffusion
+params:
+  ld_ckpt_path: #TODO insert ldm checkpoint path here
+  linear_start : 0.0002
+  linear_end : 0.0195
+
+  model_channels : 256
+  context_dim : 1024
+  channel_mult : [1, 2, 4]
+  attention_resolutions : [4, 2, 1]
+  num_res_blocks : 2
+  dropout : 0.2
+  in_channels : 1
+  out_channels : 1
+  cond_stage_trainable : True
+  image_size : [96,96]
+  first_stage_config:
+    target: thirdparty.VQVAEGAN.autoencoder.AutoencoderKL
+    params:
+      ckpt_path: #TODO insert first-stage-model (AutoKL) checkpoint path here
+      ch: 32
+      embed_dim: 1
+      z_channels: 1
+      noisy_teach_prob: 0.3
+      ch_mult: [ 1, 2, 4, 8 ]
+      htr_weight: 0.3
+      writer_weight: 0.005
+      disc_weight: 0.0
+
+  cond_config:
+    target: src.diffusion.Conditioning.TextStyleSimple.TextStyleSimple
+    params:
+      ckpt_seq_w : #TODO insert checkpoint path for the Stye Extraction Model
+      channels: 256
+      d_model: 1024
+      hidden_size: 256
+      cond_stage_nr_encoders : 4
+      dropout : 0.1
+      cond_ch_mult : [1, 2, 4, 8, 8]

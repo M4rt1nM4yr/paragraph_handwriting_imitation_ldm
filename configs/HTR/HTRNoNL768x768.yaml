@@ -1,0 +1,14 @@
+target: src.model.modules.HTR_Writer.HTR_Writer
+#ckpt: TODO: insert ckpt here if you wanna test one of the trained models. Otherwise just ignore this line to train from scratch
+params:
+  d_model : 128
+  z_channels: 128
+  noisy_teacher_prob: 0.3
+  ch : 16
+  ch_mult : [1, 2, 4, 8]
+  attention_resolution : []
+  smooth_ce_mode : 0
+  patience : 50
+  num_dec_layers: 4
+  num_enc_layers : 2
+

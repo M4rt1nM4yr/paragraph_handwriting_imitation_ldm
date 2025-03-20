@@ -1,0 +1,34 @@
+target: src.data.GeneralDataModule.GeneralDataModule
+params:
+  batch_size: 8
+  dataset: src.data.GeneralDataset.GeneralSimultaneousAugmentationsDataset
+  root_source: #path to IAM
+  dataset_type : "iam"
+  scale : 1.0
+  size : [768,768]
+  z_shape : [96,96]
+  modeParagraph : 0
+  in_channels : 1
+  TestRun : False
+  style_samples : True
+  remove_newline : False
+  persistent_workers : True
+  n_workers : 8
+  label_dropout : 0.2
+
+  augmentation:
+    target: src.data.augmentation.ocrodegTwoAtOnce.OcrodegAug2
+    params:
+      p_random_squeeze_stretch: 0.0
+      p_dilation: 0.0
+      p_erosion: 0.0
+      p_distort_with_noise: 0.2
+      p_contrast: 0.2
+      p_brightness: 0.2
+      p_elastic_distortion: 0.0
+      p_random_transform: 0.0
+      p_perspective: 0.0
+      p_background_noise: 0.0
+      p_random_vert_pad: 0.0
+      p_random_hori_pad: 0.0
+      color_channels: 1

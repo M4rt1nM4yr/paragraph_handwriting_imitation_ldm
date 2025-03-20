@@ -1,0 +1,11 @@
+target: src.model.modules.WriterSequence.WriterSequence
+#ckpt: TODO: insert ckpt here if you wanna test one of the trained models. Otherwise just ignore this line to train from scratch
+params:
+  num_writers: 1045
+  in_channels : 1
+  channels : 16
+  ch_mult : [1,2,4,8,8]
+  hidden_size : 256
+  only_embed : False
+
+

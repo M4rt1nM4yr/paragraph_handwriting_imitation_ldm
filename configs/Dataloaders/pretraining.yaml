@@ -1,0 +1,15 @@
+target: src.data.GeneralDataModule.GeneralDataModule
+params:
+  dataset: src.data.GeneralDataset.GeneralAugmentedDataset
+  root_source: #TODO insert IAM path here
+  dataset_type : "IAM"
+  scale : 1.0
+  size : [128,768]
+  z_shape : [16,96]
+  modeParagraph : 2
+  in_channels : 1
+  TestRun : False
+  style_samples : True
+  remove_newline : False
+  persistent_workers : True
+  n_workers : 8

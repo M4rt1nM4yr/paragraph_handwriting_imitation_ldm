@@ -1,0 +1,18 @@
+target: src.data.GeneralDataModule.GeneralDataModule
+params:
+  dataset: src.data.GeneralDataset.GeneralAugmentedDataset
+  root_source: #TODO IAM root
+  dataset_type : "combined"
+  train_h5 : #TODO path to train h5 file with synthetic data
+  val_h5 :  #TODO path to validation h5 file with synthetic data
+  test_h5 : #TODO path to test h5 file with synthetic data
+  scale : 1.0
+  size : [768,768]
+  z_shape : [96,96]
+  modeParagraph : 0
+  in_channels : 1
+  TestRun : False
+  style_samples : False
+  remove_newline : False
+  persistent_workers : True
+  n_workers : 8
