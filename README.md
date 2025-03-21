@@ -1,6 +1,10 @@
 # Zero-Shot Paragraph-level Handwriting Imitation with Latent Diffusion Models
 Our implementation is build upon the implementation of latent diffusion models from https://github.com/CompVis/latent-diffusion.
 
+## Reference
+
+For more details on the methodology used in this project, please refer to the paper titled "Zero-Shot Paragraph-level Handwriting Imitation with Latent Diffusion Models" by Martin Mayr, Marcel Dreier, Florian Kordon, Mathias Seuret, Jochen Zöllner, Fei Wu, Andreas Maier, and Vincent Christlein. You can access the paper [here](https://arxiv.org/abs/2409.00786) or view the [PDF](https://arxiv.org/pdf/2409.00786).
+
 ## Setup 
 Hardware details: We recommend more than 8GB VRAM to run the latent diffusion model and a graphic card that supports Cuda.
 The requirements are defined in enviornment.yaml. To train the models, we recommend around 40GB+ VRAM.
