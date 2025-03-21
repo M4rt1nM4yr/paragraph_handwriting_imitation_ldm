@@ -22,7 +22,7 @@ If you want to go further and sample the entire dataset to test our ranking meth
 ## Using the Model with Pre-trained Checkpoints
 To use the model with the pre-trained checkpoints, follow these steps:
 
-1. **Download the Checkpoint**
+1. **Download the Checkpoints**
    - Download the pre-trained checkpoint from [Google Drive](https://drive.google.com/diffusion_checkpoint.ckpt).
 
 2. **Setup the Environment**
@@ -39,7 +39,7 @@ This will allow you to utilize the pre-trained model for generating handwriting 
 ## Datasets
 - [https://fki.tic.heia-fr.ch/databases/iam-handwriting-database](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database) (primarily)
 - Synthetic data generated with fonts. (We plan to make our synthetical training data publicly available at a later date.)
-
+- [https://cvl.tuwien.ac.at/research/cvl-databases/an-off-line-database-for-writer-retrieval-writer-identification-and-word-spotting/](https://cvl.tuwien.ac.at/research/cvl-databases/an-off-line-database-for-writer-retrieval-writer-identification-and-word-spotting/) (out-of-distribution)
 
 ## Citation
 If you use this work, please cite:
