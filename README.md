@@ -27,7 +27,7 @@ If you want to go further and sample the entire dataset to test our ranking meth
 To use the model with the pre-trained checkpoints, follow these steps:
 
 1. **Download the Checkpoints**
-   - Download the pre-trained checkpoint from [Google Drive](https://drive.google.com/diffusion_checkpoint.ckpt).
+   - Download the pre-trained checkpoint from [Google Drive](https://drive.google.com/file/d/1Wu2hh69GN0ib4sZiXkNIIfZRUdZTNSyx/view?usp=share_link).
 
 2. **Setup the Environment**
    - Ensure your environment is set up as per the `environment.yaml` file.
